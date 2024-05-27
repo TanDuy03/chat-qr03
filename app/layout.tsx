@@ -8,11 +8,11 @@ import PlausibleProvider from 'next-plausible';
 
 const inter = Inter({ subsets: ['latin'] });
 
-let title = 'Nguyen Tan Duy - Software Developer';
+let title = 'Nguyen Tan Duy';
 let description = 'Generate your AI QR Code in seconds';
-let url = 'tanduy-qr.vercel.app';
+let url = 'https://www.qrgpt.io';
 let ogimage = 'https://www.qrgpt.io/og-image.png';
-let sitename = 'tanduy-qr.vercel.app';
+let sitename = 'qrGPT.io';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
