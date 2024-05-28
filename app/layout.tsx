@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 
 let title = 'Nguyen Tan Duy';
 let description = 'Generate your AI QR Code in seconds';
-let url = 'https://www.qrgpt.io';
-let ogimage = 'https://www.qrgpt.io/og-image.png';
-let sitename = 'qrGPT.io';
+let url = 'https://tanduy-qr.vercel.app';
+let ogimage = 'https://tanduy-qr.vercel.app/';
+let sitename = 'tanduy-qr.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),

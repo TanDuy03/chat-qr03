@@ -10,17 +10,17 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "replicate.com",
+        port: "",
+        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "public.blob.vercel-storage.com",
-      },
-      {
-        protocol: "https",
-        hostname: "*.replicate.delivery",
-      },
+        port: "",
+        pathname: "/**",
+      }
     ],
-    // unoptimized: true,
+    unoptimized: true,
   },
 };
 
