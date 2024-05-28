@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
     domains: [
       'pbxt.replicate.delivery',
@@ -9,17 +10,17 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "replicate.com",
-        port: "",
-        pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "public.blob.vercel-storage.com",
-        port: "",
-        pathname: "/**",
-      }
+      },
+      {
+        protocol: "https",
+        hostname: "*.replicate.delivery",
+      },
     ],
-    unoptimized: true,
+    // unoptimized: true,
   },
 };
 
