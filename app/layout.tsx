@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import PlausibleProvider from 'next-plausible';
+import {Suspense} from "react";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,16 +45,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <PlausibleProvider domain="tanduy-qr.vercel.app" />
-      </head>
-      <body className={inter.className}>
-        <Navbar />
-        <main>{children}</main>
-        <Analytics />
-        <Footer />
-      </body>
-    </html>
+    <Suspense fallback={<>Loading...</>}>
+      <html lang="en">
+        <head>
+          <PlausibleProvider domain="tanduy-qr.vercel.app" />
+        </head>
+        <body className={inter.className}>
+          <Navbar />
+          <main>{children}</main>
+          <Analytics />
+          <Footer />
+        </body>
+      </html>
+    </Suspense>
   );
 }
